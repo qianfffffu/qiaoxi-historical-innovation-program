@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Qiaoxi Inclusive Wayfinding Totem</title>
+    <meta
+      name="description"
+      content="桥西历史文化街区包容性电子导览牌更新系统网页端交互原型"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="css/styles.css?v=20260716-akfix2" />
+  </head>
+  <body class="lang-zh">
+    <div class="app-shell" id="app">
+      <header class="topbar" aria-label="System status">
+        <div class="brand-lockup">
+          <p class="system-label">QIAOXI</p>
+          <h1 data-i18n="app_title">桥西历史文化街区</h1>
+          <p class="system-subtitle">Inclusive Heritage Wayfinding</p>
+        </div>
+        <nav class="top-actions" aria-label="Global controls">
+          <a class="nav-link" href="#map-screen">Explore</a>
+          <button class="icon-button" id="show-all-locations" type="button">Four Sites</button>
+          <button class="icon-button" id="toggle-about" type="button">About</button>
+          <button class="icon-button" id="language-toggle" type="button">EN</button>
+          <button class="icon-button" id="back-to-map" type="button" hidden>
+            <span data-i18n="back_to_map">返回地图</span>
+          </button>
+        </nav>
+      </header>
+
+      <main class="screen-stack">
+        <section class="map-screen is-active" id="map-screen" aria-label="Qiaoxi map interface">
+          <section class="map-stage" aria-label="Qiaoxi bounded map">
+            <div id="baidu-map" class="baidu-map" aria-label="百度地图：桥西历史文化街区"></div>
+            <div class="map-loading" id="map-loading">
+              <p data-i18n="map_loading">正在载入桥西街区地图</p>
+            </div>
+            <div class="map-style-notice" id="map-style-notice" hidden></div>
+            <div class="node01-pick-panel" id="node01-pick-panel" hidden></div>
+            <div class="map-diagnostics" id="map-diagnostics" aria-label="Map diagnostics" hidden></div>
+          </section>
+
+          <aside class="route-dock location-dock" aria-label="Four wayfinding totem sites">
+            <div class="dock-section intro-panel">
+              <p class="section-label">Four Inclusive Digital Wayfinding Totems</p>
+              <h2>桥西历史文化街区<br /><span>Qiaoxi Historic District</span></h2>
+              <p id="map-intro-copy">以四处电子导览牌作为轻量介入点，连接桥头、文化馆、民俗艺术馆与旅游码头。</p>
+            </div>
+            <div class="dock-section location-panel">
+              <div class="panel-heading-row">
+                <p class="section-label">Sites</p>
+                <button type="button" id="show-all-map">Show All</button>
+              </div>
+              <div class="location-list" id="location-list"></div>
+            </div>
+            <div class="dock-section micro-controls">
+              <label class="toggle-row">
+                <input type="checkbox" id="contrast-toggle" />
+                <span data-i18n="high_contrast">高对比</span>
+              </label>
+              <label class="toggle-row">
+                <input type="checkbox" id="large-text-toggle" />
+                <span data-i18n="large_text">大字模式</span>
+              </label>
+              <label class="toggle-row">
+                <input type="checkbox" id="audio-first-toggle" />
+                <span data-i18n="audio_first">语音优先</span>
+              </label>
+            </div>
+          </aside>
+
+          <aside class="location-detail-card" id="location-detail-card" aria-live="polite" hidden>
+            <button class="card-close" id="close-location-card" type="button" aria-label="Close location detail">×</button>
+            <div class="detail-card-media">
+              <img id="detail-card-image" alt="" />
+            </div>
+            <p class="section-label" id="detail-card-index">01</p>
+            <h2 id="detail-card-title">-</h2>
+            <p class="detail-card-en" id="detail-card-en">-</p>
+            <p id="detail-card-copy">-</p>
+            <div class="detail-card-actions">
+              <button class="primary-button" id="detail-view-experience" type="button">View Experience</button>
+              <button class="secondary-button" id="detail-locate-map" type="button">Locate on Map</button>
+              <button class="secondary-button" id="detail-view-totem" type="button">View Totem</button>
+            </div>
+            <div class="ask-site">
+              <button class="ask-site-toggle" id="ask-site-toggle" type="button">
+                <span aria-hidden="true">⌁</span>
+                Ask the Site / 询问此地
+              </button>
+              <div class="ask-site-panel" id="ask-site-panel" hidden>
+                <div class="ask-status" aria-label="Ask the Site mock status">
+                  <span>Listening</span>
+                  <span>Understanding</span>
+                  <span>Responding</span>
+                </div>
+                <p id="ask-site-question">“这里有什么历史？”</p>
+                <p id="ask-site-response">此处可通过语音优先方式获得当前位置、下一节点与文化背景的简短回答。</p>
+              </div>
+            </div>
+          </aside>
+
+          <aside class="about-card" id="about-card" hidden>
+            <p class="section-label">About</p>
+            <p>该原型使用真实百度地图接口承载桥西街区四处电子导览牌点位。有 AK 时可通过百度 LocalSearch 校正位置；无 AK 时显示清晰的本地预览提示。</p>
+          </aside>
+        </section>
+
+        <section class="experience-screen" id="experience-screen" aria-label="Design Intervention View" hidden>
+          <aside class="node-overview">
+            <p class="section-label" data-i18n="node_experience">Design Intervention View</p>
+            <h2 id="node-name">-</h2>
+            <p class="node-meta" id="node-meta">-</p>
+            <p id="node-description">-</p>
+
+            <div class="media-toggle" role="tablist" aria-label="Existing and design image switch">
+              <button class="is-active" type="button" data-image-mode="existing" data-i18n="existing_condition">
+                Existing Condition
+              </button>
+              <button type="button" data-image-mode="design" data-i18n="design_proposal">
+                Design Proposal
+              </button>
+            </div>
+            <figure class="node-image-frame">
+              <img id="node-image" alt="" />
+              <figcaption id="node-image-caption">-</figcaption>
+            </figure>
+
+            <div class="experience-actions">
+              <button class="primary-button" type="button" data-panel-target="totem" data-i18n="open_3d">
+                进入3D Totem体验
+              </button>
+              <button class="secondary-button" type="button" data-panel-target="screen" data-i18n="open_ui">
+                进入UI体验
+              </button>
+              <button class="secondary-button" type="button" data-panel-target="tactile" data-i18n="open_tactile">
+                触觉地图与盲文
+              </button>
+            </div>
+
+            <div class="audio-panel" aria-label="Audio guide controls">
+              <p class="section-label" data-i18n="audio_guide">Audio Guide</p>
+              <div class="audio-actions">
+                <button type="button" id="play-audio" data-i18n="play_audio">播放</button>
+                <button type="button" id="pause-audio" data-i18n="pause_audio">暂停</button>
+                <button type="button" id="repeat-audio" data-i18n="repeat_audio">重复</button>
+              </div>
+            </div>
+          </aside>
+
+          <section class="module-stage">
+            <div class="module-tabs" role="tablist" aria-label="Node modules">
+              <button class="is-active" type="button" data-panel-target="overview" data-i18n="module_overview">
+                Overview
+              </button>
+              <button type="button" data-panel-target="totem" data-i18n="module_totem">
+                3D Totem
+              </button>
+              <button type="button" data-panel-target="tactile" data-i18n="module_tactile">
+                Tactile + Braille
+              </button>
+              <button type="button" data-panel-target="screen" data-i18n="module_screen">
+                Screen UI
+              </button>
+              <button type="button" data-panel-target="audio" data-i18n="module_audio">
+                Audio Guide
+              </button>
+              <button type="button" data-panel-target="materials" data-i18n="module_materials">
+                Materials + Sustainability
+              </button>
+            </div>
+
+            <article class="module-panel is-active" id="panel-overview">
+              <div class="module-heading">
+                <div>
+                  <p class="section-label">Overview</p>
+                  <h3 id="overview-title">-</h3>
+                </div>
+                <p id="overview-summary">-</p>
+              </div>
+              <section class="site-photography" id="site-photography" aria-label="Site Photography"></section>
+              <div class="overview-grid" id="overview-grid"></div>
+            </article>
+
+            <article class="module-panel" id="panel-totem">
+              <div class="module-heading">
+                <div>
+                  <p class="section-label" data-i18n="totem_model_label">Updated Totem Design</p>
+                  <h3 data-i18n="totem_model_title">可旋转的包容性导览牌模型</h3>
+                </div>
+                <div class="component-caption" id="component-caption" aria-live="polite">-</div>
+              </div>
+              <div class="totem-viewer" id="three-container">
+                <canvas id="totem-canvas" aria-label="Interactive Three.js Totem model"></canvas>
+                <div class="totem-fallback" id="totem-fallback" hidden></div>
+              </div>
+            </article>
+
+            <article class="module-panel" id="panel-tactile">
+              <div class="module-heading">
+                <div>
+                  <p class="section-label" data-i18n="tactile_label">Tactile Map</p>
+                  <h3 data-i18n="tactile_title">面向触摸、方向和语音的简化地图</h3>
+                </div>
+                <p id="tactile-caption" aria-live="polite">-</p>
+              </div>
+              <div class="tactile-module" id="tactile-module">
+                <div class="tactile-board" id="tactile-board"></div>
+                <div class="braille-detail" id="braille-detail"></div>
+              </div>
+            </article>
+
+            <article class="module-panel" id="panel-screen">
+              <div class="public-screen" aria-label="Electronic screen UI simulation">
+                <div class="screen-header">
+                  <div>
+                    <p class="section-label">Qiaoxi Historic District</p>
+                    <h3 data-i18n="screen_home_title">桥西历史文化街区</h3>
+                  </div>
+                  <span id="screen-language">中文 / English</span>
+                </div>
+                <div class="screen-route-grid" id="screen-route-grid"></div>
+                <div class="screen-info">
+                  <p id="screen-current-node">-</p>
+                  <p id="screen-current-desc">-</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="module-panel" id="panel-audio">
+              <div class="module-heading">
+                <div>
+                  <p class="section-label">Audio Guide</p>
+                  <h3 id="audio-title">-</h3>
+                </div>
+                <div class="audio-module-actions">
+                  <button type="button" id="play-audio-zh">中文播放</button>
+                  <button type="button" id="play-audio-en">English</button>
+                  <button type="button" id="pause-audio-module">Pause</button>
+                  <button type="button" id="repeat-audio-module">Repeat</button>
+                </div>
+              </div>
+              <div class="audio-module" id="audio-module"></div>
+            </article>
+
+            <article class="module-panel" id="panel-materials">
+              <div class="module-heading">
+                <div>
+                  <p class="section-label">Materials + Sustainability</p>
+                  <h3 id="materials-title">-</h3>
+                </div>
+                <p id="materials-summary">-</p>
+              </div>
+              <div class="materials-module" id="materials-module"></div>
+            </article>
+
+            <article class="module-panel" id="panel-route" hidden>
+              <div class="route-detail">
+                <p class="section-label" data-i18n="route_system">Route System</p>
+                <h3 id="detail-route-title">-</h3>
+                <p id="detail-route-description">-</p>
+                <ol class="route-node-list" id="route-node-list"></ol>
+              </div>
+            </article>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <div class="image-lightbox" id="image-lightbox" hidden>
+      <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close image viewer">Close</button>
+      <button class="lightbox-nav lightbox-prev" type="button" id="lightbox-prev" aria-label="Previous image">Prev</button>
+      <figure class="lightbox-figure">
+        <img id="lightbox-image" alt="" />
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" id="lightbox-next" aria-label="Next image">Next</button>
+    </div>
+
+    <script src="data/runtimeData.js?v=20260716-akfix2"></script>
+    <script type="module" src="js/loadBaiduMap.js?v=20260716-akfix2"></script>
+    <script src="js/mapStyle.js?v=20260716-akfix2"></script>
+    <script src="js/nodeStyle.js?v=20260716-akfix2"></script>
+    <script src="js/speech.js?v=20260716-akfix2"></script>
+    <script type="module" src="js/app.js?v=20260716-akfix2"></script>
+  </body>
+</html>

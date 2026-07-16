@@ -1,0 +1,147 @@
+window.QIAOXI_NODES = {
+  type: "FeatureCollection",
+  name: "Qiaoxi heritage nodes",
+  features: [
+    {
+      type: "Feature",
+      properties: {
+        id: "totem_entry",
+        order: 1,
+        level: "primary",
+        name: { zh: "街区入口 Totem", en: "District Entrance Totem" },
+        role: { zh: "建立方向感与路线选择", en: "Orientation and route selection" },
+      },
+      geometry: { type: "Point", coordinates: [120.13994, 30.31805] },
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: "gongchen_bridge",
+        order: 2,
+        level: "primary",
+        name: { zh: "拱宸桥历史节点", en: "Gongchen Bridge Heritage Node" },
+        role: { zh: "运河叙事与街区识别核心", en: "Canal narrative and district landmark" },
+      },
+      geometry: { type: "Point", coordinates: [120.14167, 30.31872] },
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: "industrial_museum",
+        order: 3,
+        level: "primary",
+        name: { zh: "工业遗产展示节点", en: "Industrial Heritage Node" },
+        role: { zh: "展示近代工业与仓储记忆", en: "Industrial and warehouse memory" },
+      },
+      geometry: { type: "Point", coordinates: [120.14329, 30.31757] },
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: "lane_turning",
+        order: 4,
+        level: "secondary",
+        name: { zh: "街巷转折节点", en: "Lane Turning Node" },
+        role: { zh: "提示方向转换与空间尺度变化", en: "Direction change and spatial scale cue" },
+      },
+      geometry: { type: "Point", coordinates: [120.14225, 30.31668] },
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: "rest_pocket",
+        order: 5,
+        level: "support",
+        name: { zh: "口袋休憩点", en: "Pocket Rest Point" },
+        role: { zh: "老年友好停留与路线确认", en: "Senior-friendly rest and route confirmation" },
+      },
+      geometry: { type: "Point", coordinates: [120.14096, 30.31736] },
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: "canal_edge",
+        order: 6,
+        level: "secondary",
+        name: { zh: "运河岸线观察点", en: "Canal Edge Viewing Point" },
+        role: { zh: "连接水岸、桥梁与历史街巷", en: "Links waterfront, bridge, and historic lanes" },
+      },
+      geometry: { type: "Point", coordinates: [120.1411, 30.3195] },
+    },
+  ],
+};
+
+window.QIAOXI_ROUTES = {
+  type: "FeatureCollection",
+  name: "Qiaoxi inclusive routes",
+  features: [
+    {
+      type: "Feature",
+      properties: { id: "route_intro", profile: "visitor" },
+      geometry: {
+        type: "LineString",
+        coordinates: [
+          [120.13994, 30.31805],
+          [120.14167, 30.31872],
+          [120.1411, 30.3195],
+          [120.14329, 30.31757],
+          [120.14225, 30.31668],
+        ],
+      },
+    },
+    {
+      type: "Feature",
+      properties: { id: "route_high_contrast", profile: "lowVision" },
+      geometry: {
+        type: "LineString",
+        coordinates: [
+          [120.13994, 30.31805],
+          [120.14096, 30.31736],
+          [120.14225, 30.31668],
+          [120.14329, 30.31757],
+        ],
+      },
+    },
+    {
+      type: "Feature",
+      properties: { id: "route_audio", profile: "blind" },
+      geometry: {
+        type: "LineString",
+        coordinates: [
+          [120.13994, 30.31805],
+          [120.14096, 30.31736],
+          [120.14167, 30.31872],
+          [120.1411, 30.3195],
+        ],
+      },
+    },
+    {
+      type: "Feature",
+      properties: { id: "route_rest", profile: "elderly" },
+      geometry: {
+        type: "LineString",
+        coordinates: [
+          [120.13994, 30.31805],
+          [120.14096, 30.31736],
+          [120.14167, 30.31872],
+          [120.1411, 30.3195],
+        ],
+      },
+    },
+    {
+      type: "Feature",
+      properties: { id: "route_first_visit", profile: "firstTime" },
+      geometry: {
+        type: "LineString",
+        coordinates: [
+          [120.13994, 30.31805],
+          [120.14167, 30.31872],
+          [120.14329, 30.31757],
+          [120.14225, 30.31668],
+          [120.14096, 30.31736],
+          [120.1411, 30.3195],
+        ],
+      },
+    },
+  ],
+};
