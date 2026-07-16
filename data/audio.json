@@ -1,0 +1,156 @@
+{
+  "gongchen-bridge": {
+    "zh": {
+      "current_location": "您现在位于拱宸桥头，这是桥西历史文化街区面向运河的重要门户。",
+      "direction_instruction": "从桥头进入街区后，可继续前往吴理人民俗艺术馆和桥西历史文化馆。",
+      "accessibility_notice": "桥头人流较多，请先确认台阶、桥体方向和街区入口。",
+      "cultural_interpretation": "拱宸桥连接运河两岸，也将桥西街区的历史叙事与水岸空间联系起来。"
+    },
+    "en": {
+      "current_location": "You are at Gongchen Bridge Entrance, an important canal-facing gateway to Qiaoxi Historic District.",
+      "direction_instruction": "Enter the district from the bridgehead, then continue toward Wuli Folk Art Museum and the historic culture museum.",
+      "accessibility_notice": "The bridgehead is busy. Confirm steps, bridge direction, and the district entrance before moving on.",
+      "cultural_interpretation": "Gongchen Bridge connects both canal banks and links Qiaoxi's history with the waterfront."
+    }
+  },
+  "wuli-folk-art-museum": {
+    "zh": {
+      "current_location": "您现在位于吴理人民俗艺术馆附近，这里是地方生活记忆和民俗文化的停留点。",
+      "direction_instruction": "继续前行可到达中国大运河拱宸桥桥西历史文化馆。",
+      "accessibility_notice": "此处适合短暂停留、听取语音说明并确认下一节点方向。",
+      "cultural_interpretation": "民俗艺术馆补充了运河叙事中的日常生活、器物与地方记忆。"
+    },
+    "en": {
+      "current_location": "You are near Wuli Folk Art Museum, a pause point for local life memory and folk culture.",
+      "direction_instruction": "Continue toward China Grand Canal Gongchen Bridge West Historic Culture Museum.",
+      "accessibility_notice": "This point supports a short pause, audio interpretation, and next-stop confirmation.",
+      "cultural_interpretation": "The folk art museum adds everyday objects, local memory, and life culture to the canal narrative."
+    }
+  },
+  "grand-canal-history-museum": {
+    "zh": {
+      "current_location": "您现在位于中国大运河拱宸桥桥西历史文化馆附近。",
+      "direction_instruction": "这里之后可前往拱宸桥旅游码头，完成从历史解释到水岸体验的转换。",
+      "accessibility_notice": "此处信息较集中，建议使用大字、语音和触觉提示辅助阅读。",
+      "cultural_interpretation": "该节点集中解释拱宸桥、运河、工业遗存和桥西城市更新之间的关系。"
+    },
+    "en": {
+      "current_location": "You are near China Grand Canal Gongchen Bridge West Historic Culture Museum.",
+      "direction_instruction": "From here, continue to Gongchen Bridge Tourist Wharf to shift from historic interpretation to waterfront experience.",
+      "accessibility_notice": "Information is denser here; large text, audio, and tactile cues can support reading.",
+      "cultural_interpretation": "This node explains the relation among Gongchen Bridge, the canal, industrial memory, and Qiaoxi renewal."
+    }
+  },
+  "gongchen-tourist-wharf": {
+    "zh": {
+      "current_location": "您现在位于拱宸桥旅游码头，这是水路与陆路转换的位置。",
+      "direction_instruction": "可沿岸线返回拱宸桥头，或进入桥西街区继续参观。",
+      "accessibility_notice": "临水空间请保持安全距离，低视力用户可使用连续岸线作为方向参照。",
+      "cultural_interpretation": "旅游码头使运河不只是背景，而成为抵达、离开和重新理解桥西的交通界面。"
+    },
+    "en": {
+      "current_location": "You are at Gongchen Bridge Tourist Wharf, a land-water transition point.",
+      "direction_instruction": "Return along the waterfront to the bridge entrance, or enter Qiaoxi for further exploration.",
+      "accessibility_notice": "Keep a safe distance from the water edge. Low-vision visitors can use the continuous waterfront as a cue.",
+      "cultural_interpretation": "The wharf turns the canal from a backdrop into an arrival, departure, and interpretation interface."
+    }
+  },
+  "qiaoxi_entrance": {
+    "zh": {
+      "current_location": "您现在位于桥西历史文化街区入口，这是建立方向感和选择路线的第一处导览牌。",
+      "direction_instruction": "向东步行约六十米可到达中国伞博物馆；沿运河方向继续前行，可到达拱宸桥。",
+      "accessibility_notice": "入口空间较开阔，右侧连续建筑界面可作为低视力方向参照。请优先沿触觉主线前进。",
+      "cultural_interpretation": "桥西入口把运河、桥梁、展馆和街巷串联成一个可理解的历史街区序列。"
+    },
+    "en": {
+      "current_location": "You are at Qiaoxi Historic District Entrance, the first totem for orientation and route selection.",
+      "direction_instruction": "Walk about sixty meters east to China Umbrella Museum, then continue toward the canal for Gongchen Bridge.",
+      "accessibility_notice": "The entrance is relatively open, and the continuous building edge can be used as a low-vision orientation cue.",
+      "cultural_interpretation": "The entrance organizes the canal, bridge, museums, and lanes into a readable heritage sequence."
+    }
+  },
+  "umbrella_museum": {
+    "zh": {
+      "current_location": "您现在位于中国伞博物馆前场，这里是桥西街区重要的文化展馆节点。",
+      "direction_instruction": "从展馆前场向西北方向行进，可继续到达拱宸桥；向南可连接大运河博物馆。",
+      "accessibility_notice": "前场地面较平缓，适合轮椅、老年游客和低视力游客停留确认方向。",
+      "cultural_interpretation": "伞博物馆呈现江南器物、工艺与日常生活文化，是桥西慢体验的重要停留点。"
+    },
+    "en": {
+      "current_location": "You are at the forecourt of China Umbrella Museum, a key cultural museum node in Qiaoxi.",
+      "direction_instruction": "Move northwest for Gongchen Bridge, or south toward the Grand Canal Museum.",
+      "accessibility_notice": "The forecourt is relatively level and suitable for wheelchair users, senior visitors, and low-vision orientation pauses.",
+      "cultural_interpretation": "The museum presents Jiangnan craft, objects, and everyday culture as a slow-experience stop."
+    }
+  },
+  "gongchen_bridge": {
+    "zh": {
+      "current_location": "您现在位于拱宸桥历史节点，桥体和运河共同构成桥西街区最强的空间参照。",
+      "direction_instruction": "向东南方向可前往中国京杭大运河博物馆；沿岸线向北可进入运河观察节点。",
+      "accessibility_notice": "桥头人流集中，请注意台阶、转折和临水边界。建议使用语音按钮确认下一步方向。",
+      "cultural_interpretation": "拱宸桥连接两岸街区，也把运河交通、工业记忆和城市更新叙事叠合在一起。"
+    },
+    "en": {
+      "current_location": "You are at Gongchen Bridge, where the bridge and canal form the strongest spatial reference in Qiaoxi.",
+      "direction_instruction": "Move southeast to the Grand Canal Museum, or follow the waterfront north to the canal edge node.",
+      "accessibility_notice": "The bridgehead is busy. Please notice steps, turns, and the canal edge, and use audio confirmation for direction.",
+      "cultural_interpretation": "Gongchen Bridge connects both banks and layers canal transport, industrial memory, and urban renewal."
+    }
+  },
+  "grand_canal_museum": {
+    "zh": {
+      "current_location": "您现在位于中国京杭大运河博物馆附近，这里适合停留理解运河历史与桥西更新关系。",
+      "direction_instruction": "向西可进入街巷转折节点，向西北方向可返回拱宸桥。",
+      "accessibility_notice": "馆前空间相对开阔，请在进入街巷前确认路线、坡度和下一节点方向。",
+      "cultural_interpretation": "大运河博物馆把水运历史、工业遗存和当代城市更新叙事联系起来。"
+    },
+    "en": {
+      "current_location": "You are near the Grand Canal Museum, a good pause point for understanding canal history and Qiaoxi renewal.",
+      "direction_instruction": "Move west to the lane transition node, or northwest to return to Gongchen Bridge.",
+      "accessibility_notice": "The forecourt is relatively open. Confirm route, slope, and next-stop direction before entering lanes.",
+      "cultural_interpretation": "The museum links water transport history, industrial memory, and contemporary urban renewal."
+    }
+  },
+  "lane_turning": {
+    "zh": {
+      "current_location": "您现在位于街巷转折节点，这里是从展馆前场进入细密街巷尺度的方向确认点。",
+      "direction_instruction": "请在此减速并向右侧转向，进入慢体验路线；前方可连接休憩点和大运河博物馆。",
+      "accessibility_notice": "转角处容易错过方向，请触摸盲文带并按下下一节点按钮确认路径。",
+      "cultural_interpretation": "街巷转折让游客从大型公共节点转入日常生活尺度，感知桥西历史街区的空间层次。"
+    },
+    "en": {
+      "current_location": "You are at the lane transition node, a direction checkpoint between museum forecourt and finer historic lanes.",
+      "direction_instruction": "Slow down and turn right into the slow route. A rest point and the Grand Canal Museum are ahead.",
+      "accessibility_notice": "This turn can be missed. Touch the braille strip and press the next-stop button to confirm the path.",
+      "cultural_interpretation": "The transition shifts visitors from public museum scale into everyday lane scale."
+    }
+  },
+  "rest_pocket": {
+    "zh": {
+      "current_location": "您现在位于口袋休憩点，这是慢体验路线中的短暂停留和方向复核位置。",
+      "direction_instruction": "休息后可向东北方向返回拱宸桥，也可沿慢体验路线继续进入街巷。",
+      "accessibility_notice": "这里适合重复播放语音、重新触摸路线，并为老年游客或儿童提供停留缓冲。",
+      "cultural_interpretation": "口袋空间体现桥西微更新策略：用小尺度介入提升历史街区的日常可达性。"
+    },
+    "en": {
+      "current_location": "You are at the pocket rest point, a short pause and direction-check position on the slow route.",
+      "direction_instruction": "After resting, return northeast to Gongchen Bridge or continue along the slow-experience lane.",
+      "accessibility_notice": "This point supports audio replay, tactile route reconfirmation, and a pause for seniors or children.",
+      "cultural_interpretation": "The pocket space reflects Qiaoxi micro-renewal: small interventions improving everyday accessibility."
+    }
+  },
+  "canal_edge": {
+    "zh": {
+      "current_location": "您现在位于运河岸线节点，水面、桥梁和连续岸线共同提供方向参照。",
+      "direction_instruction": "沿岸线向南可返回拱宸桥，向东南方向可继续连接展馆节点。",
+      "accessibility_notice": "临水空间请保持与岸线边界的安全距离，低视力用户可使用连续岸线作为方向线索。",
+      "cultural_interpretation": "运河岸线是桥西历史文化街区的空间骨架，也是理解水岸更新的重要界面。"
+    },
+    "en": {
+      "current_location": "You are at the canal edge node, where water, bridge, and continuous waterfront provide orientation.",
+      "direction_instruction": "Follow the edge south to return to Gongchen Bridge, or move southeast toward the museum nodes.",
+      "accessibility_notice": "Keep a safe distance from the water edge. Low-vision visitors can use the continuous waterfront as a directional cue.",
+      "cultural_interpretation": "The canal edge is the spatial spine of Qiaoxi and a key interface for waterfront renewal."
+    }
+  }
+}

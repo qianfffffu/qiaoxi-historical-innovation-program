@@ -1,0 +1,263 @@
+{
+  "theme": {
+    "background": "#f6f9fc",
+    "context": "#edf3f7",
+    "building": "#dfe6eb",
+    "water": "#d6e8f4",
+    "primaryBlue": "#4e7fa7",
+    "primaryDark": "#244a68",
+    "primarySoft": "#dceaf4",
+    "route": "#7ca6c2",
+    "routeHeritage": "#7ca6c2",
+    "routeAccessible": "#94aebb",
+    "routeSlow": "#8ea8a6",
+    "node": "#4e7fa7",
+    "ink": "#173247",
+    "muted": "#6b8191",
+    "line": "rgba(54,93,122,0.18)"
+  },
+  "map": {
+    "baidu_style_id": "",
+    "center": {
+      "lat": 30.32312,
+      "lng": 120.14416
+    },
+    "zoom": 17,
+    "min_zoom": 15,
+    "max_zoom": 19,
+    "bounds": {
+      "south": 30.32155,
+      "west": 120.14185,
+      "north": 30.32465,
+      "east": 120.14635
+    }
+  },
+  "ui": {
+    "app_title": {
+      "zh": "桥西历史文化街区",
+      "en": "Qiaoxi Historic District"
+    },
+    "district_en": {
+      "zh": "Qiaoxi Historic District",
+      "en": "Qiaoxi Historic District"
+    },
+    "back_to_map": {
+      "zh": "返回地图",
+      "en": "Back to Map"
+    },
+    "map_mode_label": {
+      "zh": "探索模式",
+      "en": "Explore Mode"
+    },
+    "recommended_route": {
+      "zh": "推荐路线",
+      "en": "Recommended Route"
+    },
+    "distance": {
+      "zh": "距离",
+      "en": "Distance"
+    },
+    "time": {
+      "zh": "时间",
+      "en": "Time"
+    },
+    "node_count": {
+      "zh": "节点",
+      "en": "Nodes"
+    },
+    "access_layer": {
+      "zh": "包容性图层",
+      "en": "Inclusive Layers"
+    },
+    "high_contrast": {
+      "zh": "高对比",
+      "en": "High Contrast"
+    },
+    "large_text": {
+      "zh": "大字模式",
+      "en": "Large Text"
+    },
+    "audio_first": {
+      "zh": "语音优先",
+      "en": "Audio First"
+    },
+    "legend": {
+      "zh": "图例",
+      "en": "Legend"
+    },
+    "level_1": {
+      "zh": "Level 1 核心文化节点",
+      "en": "Level 1 Primary Heritage Node"
+    },
+    "level_2": {
+      "zh": "Level 2 体验节点",
+      "en": "Level 2 Secondary Experience Node"
+    },
+    "level_3": {
+      "zh": "Level 3 生活节点",
+      "en": "Level 3 Local Living Node"
+    },
+    "route_line": {
+      "zh": "推荐路线",
+      "en": "Recommended Route"
+    },
+    "node_experience": {
+      "zh": "Design Intervention View",
+      "en": "Design Intervention View"
+    },
+    "existing_condition": {
+      "zh": "Existing Condition",
+      "en": "Existing Condition"
+    },
+    "design_proposal": {
+      "zh": "Design Proposal",
+      "en": "Design Proposal"
+    },
+    "open_3d": {
+      "zh": "进入3D Totem体验",
+      "en": "Open 3D Totem"
+    },
+    "open_ui": {
+      "zh": "进入UI体验",
+      "en": "Open Screen UI"
+    },
+    "open_tactile": {
+      "zh": "触觉地图与盲文",
+      "en": "Tactile Map and Braille"
+    },
+    "audio_guide": {
+      "zh": "Audio Guide",
+      "en": "Audio Guide"
+    },
+    "play_audio": {
+      "zh": "播放",
+      "en": "Play"
+    },
+    "pause_audio": {
+      "zh": "暂停",
+      "en": "Pause"
+    },
+    "repeat_audio": {
+      "zh": "重复",
+      "en": "Repeat"
+    },
+    "module_totem": {
+      "zh": "3D Totem",
+      "en": "3D Totem"
+    },
+    "module_overview": {
+      "zh": "总览",
+      "en": "Overview"
+    },
+    "module_tactile": {
+      "zh": "触觉与盲文",
+      "en": "Tactile + Braille"
+    },
+    "module_screen": {
+      "zh": "电子屏 UI",
+      "en": "Screen UI"
+    },
+    "module_audio": {
+      "zh": "Audio Guide",
+      "en": "Audio Guide"
+    },
+    "module_materials": {
+      "zh": "材料与可持续",
+      "en": "Materials + Sustainability"
+    },
+    "module_route": {
+      "zh": "推荐路线",
+      "en": "Route"
+    },
+    "totem_model_label": {
+      "zh": "Updated Totem Design",
+      "en": "Updated Totem Design"
+    },
+    "totem_model_title": {
+      "zh": "可旋转的包容性导览牌模型",
+      "en": "Rotatable Inclusive Wayfinding Totem"
+    },
+    "tactile_label": {
+      "zh": "Tactile Map",
+      "en": "Tactile Map"
+    },
+    "tactile_title": {
+      "zh": "面向触摸、方向和语音的简化地图",
+      "en": "A simplified map for touch, direction, and audio"
+    },
+    "screen_home_title": {
+      "zh": "桥西历史文化街区",
+      "en": "Qiaoxi Historic District"
+    },
+    "route_system": {
+      "zh": "路线系统",
+      "en": "Route System"
+    },
+    "map_loading": {
+      "zh": "正在载入桥西街区地图",
+      "en": "Loading Qiaoxi map"
+    }
+  },
+  "levels": {
+    "level_1": {
+      "zh": "Level 1 核心文化节点",
+      "en": "Level 1 Primary Heritage Node"
+    },
+    "level_2": {
+      "zh": "Level 2 体验节点",
+      "en": "Level 2 Secondary Experience Node"
+    },
+    "level_3": {
+      "zh": "Level 3 生活节点",
+      "en": "Level 3 Local Living Node"
+    }
+  },
+  "categories": {
+    "arrival": {
+      "zh": "入口与方向建立",
+      "en": "Arrival and Orientation"
+    },
+    "museum": {
+      "zh": "文化展馆",
+      "en": "Cultural Museum"
+    },
+    "bridge": {
+      "zh": "桥梁与运河遗产",
+      "en": "Bridge and Canal Heritage"
+    },
+    "street": {
+      "zh": "街巷生活",
+      "en": "Street Life"
+    },
+    "rest": {
+      "zh": "休憩与无障碍确认",
+      "en": "Rest and Accessibility Checkpoint"
+    }
+  },
+  "totem_components": {
+    "screen": {
+      "description": {
+        "zh": "互动屏幕提供三种路线入口、节点中英文介绍和清晰的大按钮，适合公共空间触摸操作。",
+        "en": "The interactive screen offers three route modes, bilingual node content, and large touch targets for public use."
+      }
+    },
+    "tactile": {
+      "description": {
+        "zh": "触觉地图只保留当前位置、一级文化节点、主要路线和方向关系，避免复制复杂视觉地图。",
+        "en": "The tactile map keeps only current position, primary heritage nodes, main route, and directional relationships."
+      }
+    },
+    "braille": {
+      "description": {
+        "zh": "盲文区域与触觉地图形成上下对应，帮助视障用户确认节点名称和基本方位。",
+        "en": "The braille panel aligns with the tactile map to confirm node names and basic orientation."
+      }
+    },
+    "audio": {
+      "description": {
+        "zh": "语音按钮提供主动触发的 Audio Guide，不自动播放，支持暂停与重复。",
+        "en": "The audio button triggers the guide only on request, with pause and repeat controls."
+      }
+    }
+  }
+}

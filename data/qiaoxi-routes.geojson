@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "name": "Qiaoxi inclusive routes",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "route_intro", "profile": "visitor" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.13994, 30.31805],
+          [120.14167, 30.31872],
+          [120.1411, 30.3195],
+          [120.14329, 30.31757],
+          [120.14225, 30.31668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "route_high_contrast", "profile": "lowVision" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.13994, 30.31805],
+          [120.14096, 30.31736],
+          [120.14225, 30.31668],
+          [120.14329, 30.31757]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "route_audio", "profile": "blind" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.13994, 30.31805],
+          [120.14096, 30.31736],
+          [120.14167, 30.31872],
+          [120.1411, 30.3195]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "route_rest", "profile": "elderly" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.13994, 30.31805],
+          [120.14096, 30.31736],
+          [120.14167, 30.31872],
+          [120.1411, 30.3195]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "route_first_visit", "profile": "firstTime" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.13994, 30.31805],
+          [120.14167, 30.31872],
+          [120.14329, 30.31757],
+          [120.14225, 30.31668],
+          [120.14096, 30.31736],
+          [120.1411, 30.3195]
+        ]
+      }
+    }
+  ]
+}

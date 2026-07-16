@@ -1,0 +1,407 @@
+[
+  {
+    "id": "gongchen-bridge",
+    "name": {
+      "zh": "拱宸桥头",
+      "en": "Gongchen Bridge Entrance"
+    },
+    "nameZh": "拱宸桥头",
+    "nameEn": "Gongchen Bridge Entrance",
+    "name_cn": "拱宸桥头",
+    "name_en": "Gongchen Bridge Entrance",
+    "primaryName": "拱宸桥",
+    "searchKeyword": "拱宸桥",
+    "searchKeywords": [
+      "拱宸桥",
+      "拱宸桥西",
+      "拱宸桥 杭州 拱墅区"
+    ],
+    "search_note": "展示名称为拱宸桥头；百度地图检索建议使用“杭州 拱宸桥”。",
+    "coordinateSystem": "BD09",
+    "source": "manually-confirmed-bd09",
+    "verified": true,
+    "address": "杭州市拱墅区拱宸桥西侧桥头",
+    "latitude": 30.324315,
+    "longitude": 120.145135,
+    "lat": 30.324315,
+    "lng": 120.145135,
+    "type": "bridge",
+    "heritage_level": 1,
+    "category": "arrival",
+    "priority": 1,
+    "image": "assets/images/gongchen-bridge-existing.png",
+    "existing_image": "assets/images/gongchen-bridge-existing.png",
+    "design_image": "assets/sketches/gongchen-bridge-design.png",
+    "shortDescriptionZh": "拱宸桥头是桥西历史文化街区面向京杭大运河的重要空间门户，也是游客建立方向感和理解两岸关系的起点。",
+    "shortDescriptionEn": "The entrance of Gongchen Bridge forms a key spatial gateway between the Grand Canal and Qiaoxi Historic District, helping visitors understand the relationship between the bridge, waterfront and historic urban fabric.",
+    "description": {
+      "zh": "拱宸桥头是桥西历史文化街区面向运河的重要门户，连接桥体、码头与街区入口，适合作为初访者建立方向感的第一处电子导览牌。",
+      "en": "The bridge entrance works as a threshold between the Grand Canal, the bridge structure, and Qiaoxi Historic District, making it suitable as the first orientation totem for visitors."
+    },
+    "existing_caption": {
+      "zh": "现状：桥头人流、桥体方向和街区入口信息需要被更轻量地整合。",
+      "en": "Existing condition: bridgehead flow, bridge direction, and district entry information need a lighter integrated cue."
+    },
+    "design_caption": {
+      "zh": "更新：以桥头为门户节点，提供四点总览、语音入口和导览牌位置确认。",
+      "en": "Proposal: use the bridgehead as an arrival node with four-site overview, audio entry, and totem location confirmation."
+    },
+    "audio_cn": "您现在位于拱宸桥头。这里连接运河两岸与桥西街区入口，适合作为第一次确认方向的导览节点。",
+    "audio_en": "You are at Gongchen Bridge Entrance. This point connects both canal banks and the entrance to Qiaoxi Historic District.",
+    "accessibility_information": {
+      "summary": {
+        "zh": "桥头人流较多，应优先提供方向与安全提示。",
+        "en": "The bridgehead has heavier pedestrian flow and should prioritize orientation and safety cues."
+      },
+      "tactile_note": {
+        "zh": "触觉信息以桥体、运河方向和街区入口为主要参照。",
+        "en": "Tactile information uses the bridge, canal direction, and district entrance as primary references."
+      },
+      "braille": "⠛⠕⠝⠛⠉⠓⠑⠝"
+    },
+    "route_priority": 1,
+    "fullDescriptionZh": "拱宸桥连接运河两岸，是桥西历史文化街区最具辨识度的历史构筑物之一。该节点能够同时观察桥体、河道、水岸与街区入口，因此适合作为电子导览牌的首要设置位置。导览内容应帮助初访者快速确认方位，并理解拱宸桥在区域交通、文化记忆和空间组织中的作用。",
+    "fullDescriptionEn": "Gongchen Bridge connects both sides of the Grand Canal and serves as one of the most recognizable historic structures in the district. From this location, visitors can perceive the bridge, the canal, the waterfront and the entrance to Qiaoxi as a connected spatial system. The digital totem therefore functions as an orientation point and introduces the bridge’s role in local movement, memory and urban structure.",
+    "images": [
+      {
+        "id": "gongchen-bridge-hero",
+        "src": "/images/qiaoxi/gongchen-bridge/gongchen-bridge-hero.jpg",
+        "altZh": "从桥西岸观察拱宸桥桥头与运河",
+        "altEn": "View of Gongchen Bridge entrance and the Grand Canal from the western bank",
+        "captionZh": "拱宸桥西侧桥头及运河空间关系",
+        "captionEn": "The western entrance of Gongchen Bridge and its relationship with the canal",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      },
+      {
+        "id": "gongchen-bridge-detail-01",
+        "src": "/images/qiaoxi/gongchen-bridge/gongchen-bridge-detail-01.jpg",
+        "altZh": "拱宸桥桥面与西岸连接处",
+        "altEn": "The bridge deck meeting the western bank",
+        "captionZh": "桥面起点、岸线与步行入口的交汇",
+        "captionEn": "The meeting of bridge deck, waterfront edge and pedestrian entry",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      },
+      {
+        "id": "gongchen-bridge-detail-02",
+        "src": "/images/qiaoxi/gongchen-bridge/gongchen-bridge-detail-02.jpg",
+        "altZh": "桥西岸公共空间与导览牌设置语境",
+        "altEn": "Public space context on the western bank for the wayfinding totem",
+        "captionZh": "适合设置首个电子导览牌的桥头空间",
+        "captionEn": "Bridgehead space suitable for the first digital wayfinding totem",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      }
+    ]
+  },
+  {
+    "id": "wuli-folk-art-museum",
+    "name": {
+      "zh": "吴理人民俗艺术馆",
+      "en": "Wuli Folk Art Museum"
+    },
+    "nameZh": "吴理人民俗艺术馆",
+    "nameEn": "Wuli Folk Art Museum",
+    "name_cn": "吴理人民俗艺术馆",
+    "name_en": "Wuli Folk Art Museum",
+    "primaryName": "吴理人民俗艺术馆",
+    "searchKeyword": "吴理人民俗艺术馆",
+    "searchKeywords": [
+      "吴理人民俗艺术馆",
+      "吴理人民俗艺术博物馆",
+      "吴理人民俗艺术馆 拱墅区",
+      "吴理人家民俗艺术馆"
+    ],
+    "search_note": "如百度地图名称存在差异，请以桥西历史文化街区附近的民俗艺术馆结果为准。",
+    "coordinateSystem": "BD09",
+    "address": "浙江省杭州市拱墅区桥西直街17号",
+    "latitude": 30.323533,
+    "longitude": 120.14523,
+    "lat": 30.323533,
+    "lng": 120.14523,
+    "type": "museum",
+    "heritage_level": 1,
+    "category": "museum",
+    "priority": 2,
+    "image": "assets/images/qiaoxi-entrance-existing.png",
+    "existing_image": "assets/images/qiaoxi-entrance-existing.png",
+    "design_image": "assets/sketches/qiaoxi-entrance-design.png",
+    "shortDescriptionZh": "该节点通过民俗艺术、生活器物和地方文化记忆，补充桥西街区的日常生活叙事。",
+    "shortDescriptionEn": "This node introduces local customs, folk art and everyday cultural memory, complementing the industrial and canal-related narratives of Qiaoxi.",
+    "description": {
+      "zh": "吴理人民俗艺术馆承载地方民俗、器物与生活记忆，适合作为从桥头进入街区后的文化体验节点，补充运河叙事中的日常维度。",
+      "en": "Wuli Folk Art Museum represents local folk culture, objects, and everyday memory, adding a daily-life layer to the canal narrative after visitors enter the district."
+    },
+    "existing_caption": {
+      "zh": "现状：文化节点需要更清晰地与街区步行序列和语音导览关联。",
+      "en": "Existing condition: the cultural node needs a clearer connection with the walking sequence and audio guide."
+    },
+    "design_caption": {
+      "zh": "更新：以民俗体验为主题，强调短停留、低干扰和双语文化解释。",
+      "en": "Proposal: frame the totem around folk culture, short pause, low visual noise, and bilingual interpretation."
+    },
+    "audio_cn": "您现在位于吴理人民俗艺术馆附近。这里适合停留了解地方生活记忆，并继续前往桥西历史文化馆。",
+    "audio_en": "You are near Wuli Folk Art Museum. This is a suitable pause for local folk memory before moving toward the historic culture museum.",
+    "accessibility_information": {
+      "summary": {
+        "zh": "节点适合停留阅读和语音文化说明。",
+        "en": "The node supports pause, reading, and audio interpretation."
+      },
+      "tactile_note": {
+        "zh": "触觉信息强调场馆入口、下一节点方向和安静停留边界。",
+        "en": "Tactile information emphasizes entrance, next-stop direction, and quiet pause edge."
+      },
+      "braille": "⠺⠥⠇⠊"
+    },
+    "route_priority": 2,
+    "fullDescriptionZh": "吴理人民俗艺术馆以地方民俗、民间艺术和日常生活文化为主要内容。与以建筑遗产和运河历史为核心的节点相比，该场馆提供了更贴近居民生活的文化视角。电子导览牌在此应强调街区文化不仅存在于纪念性建筑中，也存在于手工艺、生活习惯和社区记忆中。",
+    "fullDescriptionEn": "The Wuli Folk Art Museum presents local customs, folk practices and material culture. In contrast to nodes focused primarily on architecture and canal history, it offers a perspective rooted in everyday life. The digital guide at this location should communicate that the identity of Qiaoxi is also formed through craft, domestic culture and community memory.",
+    "images": [
+      {
+        "id": "wuli-folk-art-museum-hero",
+        "src": "/images/qiaoxi/wuli-folk-art-museum/wuli-folk-art-museum-hero.jpg",
+        "altZh": "吴理人民俗艺术馆入口及街巷环境",
+        "altEn": "Entrance and street context of the Wuli Folk Art Museum",
+        "captionZh": "民俗艺术馆与桥西街巷生活界面",
+        "captionEn": "The folk art museum and everyday street frontage in Qiaoxi",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      },
+      {
+        "id": "wuli-folk-art-museum-detail-01",
+        "src": "/images/qiaoxi/wuli-folk-art-museum/wuli-folk-art-museum-detail-01.jpg",
+        "altZh": "民俗艺术展示与地方生活记忆",
+        "altEn": "Folk art display and local everyday memory",
+        "captionZh": "以生活器物与手工艺补充街区叙事",
+        "captionEn": "Objects and craft complement the district narrative",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      },
+      {
+        "id": "wuli-folk-art-museum-detail-02",
+        "src": "/images/qiaoxi/wuli-folk-art-museum/wuli-folk-art-museum-detail-02.jpg",
+        "altZh": "场馆周边的安静停留空间",
+        "altEn": "Quiet pause space around the museum",
+        "captionZh": "适合语音导览与短暂停留的文化节点",
+        "captionEn": "A cultural node for audio guidance and brief pause",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      }
+    ]
+  },
+  {
+    "id": "grand-canal-history-museum",
+    "name": {
+      "zh": "中国大运河拱宸桥桥西历史文化馆",
+      "en": "China Grand Canal Gongchen Bridge West Historic Culture Museum"
+    },
+    "nameZh": "中国大运河拱宸桥桥西历史文化馆",
+    "nameEn": "China Grand Canal Gongchen Bridge West Historic Culture Museum",
+    "name_cn": "中国大运河拱宸桥桥西历史文化馆",
+    "name_en": "China Grand Canal Gongchen Bridge West Historic Culture Museum",
+    "primaryName": "桥西历史文化馆",
+    "searchKeyword": "桥西历史文化馆",
+    "searchKeywords": [
+      "桥西历史文化馆",
+      "拱宸桥桥西历史文化馆",
+      "中国大运河拱宸桥桥西历史文化馆",
+      "桥西历史街区历史文化馆"
+    ],
+    "search_note": "展示名称较长；百度地图可能返回“桥西历史文化馆”等相近名称，应优先选择桥西历史文化街区附近结果。",
+    "coordinateSystem": "BD09",
+    "address": "杭州市拱墅区同和里26-28-30号",
+    "latitude": 30.32364,
+    "longitude": 120.144351,
+    "lat": 30.32364,
+    "lng": 120.144351,
+    "type": "museum",
+    "heritage_level": 1,
+    "category": "museum",
+    "priority": 1,
+    "image": "assets/images/grand-canal-museum-existing.png",
+    "existing_image": "assets/images/grand-canal-museum-existing.png",
+    "design_image": "assets/sketches/grand-canal-museum-design.png",
+    "shortDescriptionZh": "该馆集中呈现桥西片区与大运河相关的历史信息，是理解街区发展脉络的重要解释节点。",
+    "shortDescriptionEn": "This museum provides a concentrated interpretation of the historical development of Qiaoxi and its relationship with the Grand Canal.",
+    "description": {
+      "zh": "该馆集中呈现拱宸桥与桥西街区的历史信息，适合作为核心解释节点，帮助游客把桥、运河、工业遗存和街区更新联系起来。",
+      "en": "This museum concentrates historic information about Gongchen Bridge and Qiaoxi, helping visitors connect the bridge, canal, industrial memory, and district renewal."
+    },
+    "existing_caption": {
+      "zh": "现状：历史信息集中，但入口导览需要更轻量、可触达的分层表达。",
+      "en": "Existing condition: historical information is concentrated, while entry wayfinding needs lighter accessible layering."
+    },
+    "design_caption": {
+      "zh": "更新：以核心解释节点组织屏幕、触觉图和自然语言询问入口。",
+      "en": "Proposal: organize screen, tactile map, and natural-language inquiry around the core interpretation node."
+    },
+    "audio_cn": "您现在位于桥西历史文化馆附近。这里适合作为理解拱宸桥、运河和街区更新关系的核心解释节点。",
+    "audio_en": "You are near the Qiaoxi historic culture museum, a core interpretation point for the bridge, canal, and district renewal.",
+    "accessibility_information": {
+      "summary": {
+        "zh": "适合停留阅读历史信息，并确认下一处水陆转换节点。",
+        "en": "Suitable for reading historic information and confirming the next land-water transition node."
+      },
+      "tactile_note": {
+        "zh": "触觉图以文化馆、桥头和码头之间的关系为重点。",
+        "en": "The tactile map focuses on the relation between museum, bridgehead, and wharf."
+      },
+      "braille": "⠓⠊⠎⠞⠕⠗⠽"
+    },
+    "route_priority": 1,
+    "fullDescriptionZh": "中国大运河拱宸桥桥西历史文化馆承担区域历史信息整合与文化解释功能。该节点适合作为四个电子导览牌中的核心知识节点，将分散于街区中的桥梁、工业遗产、居住空间和运河文化联系起来。导览系统应在此提供更完整的历史时间线、空间演变和节点关系说明。",
+    "fullDescriptionEn": "The China Grand Canal Gongchen Bridge West Historic Culture Museum acts as a central interpretation point for the district. It brings together information about the bridge, industrial heritage, residential fabric and canal culture. The digital interface at this location should provide a more comprehensive account of historical development, spatial transformation and relationships between key heritage sites.",
+    "images": [
+      {
+        "id": "grand-canal-history-museum-hero",
+        "src": "/images/qiaoxi/grand-canal-history-museum/grand-canal-history-museum-hero.jpg",
+        "altZh": "桥西历史文化馆入口与周边空间",
+        "altEn": "Entrance and surrounding space of the Qiaoxi Historic Culture Museum",
+        "captionZh": "作为核心解释节点的历史文化馆",
+        "captionEn": "The historic culture museum as a core interpretation node",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      },
+      {
+        "id": "grand-canal-history-museum-detail-01",
+        "src": "/images/qiaoxi/grand-canal-history-museum/grand-canal-history-museum-detail-01.jpg",
+        "altZh": "文化馆与桥西历史街区的空间联系",
+        "altEn": "Spatial relationship between the museum and Qiaoxi Historic District",
+        "captionZh": "连接桥梁、街区与运河记忆的展陈节点",
+        "captionEn": "An interpretive node connecting bridge, district and canal memory",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      },
+      {
+        "id": "grand-canal-history-museum-detail-02",
+        "src": "/images/qiaoxi/grand-canal-history-museum/grand-canal-history-museum-detail-02.jpg",
+        "altZh": "历史信息展示与导览系统设置语境",
+        "altEn": "Historical interpretation context for the digital guide",
+        "captionZh": "适合提供时间线与节点关系说明的位置",
+        "captionEn": "A location for timeline and site-relationship interpretation",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      }
+    ]
+  },
+  {
+    "id": "gongchen-tourist-wharf",
+    "name": {
+      "zh": "拱宸桥旅游码头",
+      "en": "Gongchen Bridge Tourist Wharf"
+    },
+    "nameZh": "拱宸桥旅游码头",
+    "nameEn": "Gongchen Bridge Tourist Wharf",
+    "name_cn": "拱宸桥旅游码头",
+    "name_en": "Gongchen Bridge Tourist Wharf",
+    "primaryName": "拱宸桥旅游码头",
+    "searchKeyword": "拱宸桥旅游码头",
+    "searchKeywords": [
+      "拱宸桥旅游码头",
+      "拱宸桥码头",
+      "运河拱宸桥码头",
+      "拱宸桥游船码头"
+    ],
+    "search_note": "展示名称为拱宸桥旅游码头；百度地图检索建议使用同名关键词并选择运河岸线附近结果。",
+    "coordinateSystem": "BD09",
+    "address": "浙江省杭州市拱墅区拱宸桥街道桥西直街34号",
+    "latitude": 30.3226,
+    "longitude": 120.145146,
+    "lat": 30.3226,
+    "lng": 120.145146,
+    "type": "wharf",
+    "heritage_level": 1,
+    "category": "bridge",
+    "priority": 2,
+    "image": "assets/images/canal-edge-existing.png",
+    "existing_image": "assets/images/canal-edge-existing.png",
+    "design_image": "assets/sketches/canal-edge-design.png",
+    "shortDescriptionZh": "旅游码头是水路与陆路转换的重要节点，也承担游客抵达、离开和重新识别空间方向的功能。",
+    "shortDescriptionEn": "The tourist wharf is an important transition point between water-based and pedestrian movement, supporting arrival, departure and spatial reorientation.",
+    "description": {
+      "zh": "拱宸桥旅游码头是水路与陆路转换的位置，适合作为抵达、离开和重新确认路线的导览节点，提示运河方向与岸线安全。",
+      "en": "The tourist wharf is a land-water transition point, suitable for arrival, departure, and route reconfirmation while clarifying canal direction and waterfront safety."
+    },
+    "existing_caption": {
+      "zh": "现状：码头到街区的转换需要更清楚的方向、岸线安全和返程提示。",
+      "en": "Existing condition: the wharf-to-district transition needs clearer direction, waterfront safety, and return cues."
+    },
+    "design_caption": {
+      "zh": "更新：以水陆转换为主题，提示抵达、离开、岸线和桥头方向。",
+      "en": "Proposal: frame the totem around arrival, departure, waterfront edge, and bridgehead direction."
+    },
+    "audio_cn": "您现在位于拱宸桥旅游码头。这里是水路与陆路转换节点，请确认岸线安全距离和返回桥头方向。",
+    "audio_en": "You are at Gongchen Bridge Tourist Wharf, a land-water transition point. Confirm the safe waterfront distance and return direction to the bridge.",
+    "accessibility_information": {
+      "summary": {
+        "zh": "临水节点需要安全距离、方向和离开路径提示。",
+        "en": "The waterfront node needs safety distance, orientation, and departure cues."
+      },
+      "tactile_note": {
+        "zh": "触觉信息以连续岸线、码头位置和桥头方向为主。",
+        "en": "Tactile information uses the continuous waterfront, wharf position, and bridgehead direction."
+      },
+      "braille": "⠺⠓⠁⠗⠋"
+    },
+    "route_priority": 2,
+    "fullDescriptionZh": "拱宸桥旅游码头位于运河交通与街区步行系统的交汇处。游客从游船抵达后，需要迅速了解拱宸桥、桥西街区和周边文化设施之间的关系。因此，该节点的电子导览牌应突出到达信息、步行方向、下一节点建议以及水岸公共空间的连续性。",
+    "fullDescriptionEn": "The Gongchen Bridge Tourist Wharf sits at the intersection of canal transport and pedestrian movement. Visitors arriving by boat need to quickly understand the relationship between the bridge, Qiaoxi Historic District and nearby cultural sites. The digital totem should therefore emphasize arrival orientation, walking connections, suggested next destinations and the continuity of the waterfront.",
+    "images": [
+      {
+        "id": "gongchen-tourist-wharf-hero",
+        "src": "/images/qiaoxi/gongchen-tourist-wharf/gongchen-tourist-wharf-hero.jpg",
+        "altZh": "拱宸桥旅游码头与运河岸线",
+        "altEn": "Gongchen Bridge Tourist Wharf and the canal edge",
+        "captionZh": "水路抵达与步行导览转换的位置",
+        "captionEn": "A transition point between boat arrival and pedestrian wayfinding",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      },
+      {
+        "id": "gongchen-tourist-wharf-detail-01",
+        "src": "/images/qiaoxi/gongchen-tourist-wharf/gongchen-tourist-wharf-detail-01.jpg",
+        "altZh": "码头周边的水岸公共空间",
+        "altEn": "Waterfront public space around the wharf",
+        "captionZh": "用于方向确认和下一节点建议的岸线节点",
+        "captionEn": "A waterfront node for orientation and next-stop guidance",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      },
+      {
+        "id": "gongchen-tourist-wharf-detail-02",
+        "src": "/images/qiaoxi/gongchen-tourist-wharf/gongchen-tourist-wharf-detail-02.jpg",
+        "altZh": "码头、桥头与桥西街区之间的联系",
+        "altEn": "Relationship between the wharf, bridgehead and Qiaoxi Historic District",
+        "captionZh": "连接水路、桥梁与街区步行系统",
+        "captionEn": "Connecting canal transport, bridge movement and the district walking system",
+        "sourceName": "待补充图片来源",
+        "sourceUrl": "",
+        "credit": "",
+        "license": ""
+      }
+    ]
+  }
+]

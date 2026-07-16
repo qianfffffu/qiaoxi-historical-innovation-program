@@ -1,0 +1,62 @@
+[
+  {
+    "id": "shell",
+    "name_cn": "再生铝合金",
+    "name_en": "Recycled Aluminum Alloy",
+    "applied_to": "主体外壳 / Structural shell",
+    "benefits_cn": ["轻量", "耐腐蚀", "易回收", "适合模块化加工", "户外适用"],
+    "benefits_en": ["Lightweight", "Corrosion resistant", "Recyclable", "Suitable for modular fabrication", "Outdoor-ready"],
+    "sustainability_note_cn": "以可回收金属作为主体结构，减少长期维护和材料替换成本。",
+    "sustainability_note_en": "A recyclable metal shell reduces long-term maintenance and replacement cost."
+  },
+  {
+    "id": "screen_glass",
+    "name_cn": "防眩光钢化玻璃",
+    "name_en": "Anti-glare Tempered Glass",
+    "applied_to": "主屏幕保护层 / Main screen protection",
+    "benefits_cn": ["户外可读性更好", "易清洁", "耐冲击", "耐候"],
+    "benefits_en": ["Better outdoor readability", "Easy to clean", "Impact resistant", "Weather resistant"],
+    "sustainability_note_cn": "提升屏幕可读性与耐久性，延长电子模块使用寿命。",
+    "sustainability_note_en": "Improves readability and durability, extending the life of the screen module."
+  },
+  {
+    "id": "tactile_plate",
+    "name_cn": "阳极氧化铝触觉板",
+    "name_en": "Anodized Aluminum Tactile Plate",
+    "applied_to": "盲文与触觉信息板 / Braille and tactile information panel",
+    "benefits_cn": ["触感明确", "耐磨", "适合CNC凸点", "适合激光刻蚀", "易清洁"],
+    "benefits_en": ["Clear tactile feedback", "Wear resistant", "CNC raised dots", "Laser etching compatible", "Easy to clean"],
+    "sustainability_note_cn": "触觉信息可单独拆换，避免整机替换。",
+    "sustainability_note_en": "Tactile information can be replaced independently without replacing the whole totem."
+  },
+  {
+    "id": "audio_buttons",
+    "name_cn": "防水金属按键与密封硅胶圈",
+    "name_en": "Waterproof Metal Buttons with Silicone Gaskets",
+    "applied_to": "侧边Audio按钮组 / Side audio button column",
+    "benefits_cn": ["户外耐候", "触感明确", "支持高频使用", "易维护"],
+    "benefits_en": ["Weatherproof", "Clear tactile response", "High-frequency use", "Maintainable"],
+    "sustainability_note_cn": "高频触摸部件可独立检修，降低维护干预强度。",
+    "sustainability_note_en": "High-use touch components can be serviced independently, reducing maintenance intervention."
+  },
+  {
+    "id": "solar",
+    "name_cn": "顶部集成薄膜光伏板",
+    "name_en": "Integrated Thin-film Solar Panel",
+    "applied_to": "顶部辅助能源模块 / Top auxiliary energy module",
+    "benefits_cn": ["辅助供电", "降低日常能耗", "体量轻", "可与顶部构件整合"],
+    "benefits_en": ["Auxiliary power", "Reduced daily energy use", "Lightweight", "Integrated with top element"],
+    "sustainability_note_cn": "桥西街区存在树荫遮挡，太阳能作为补充电源，而非完全离网供电。",
+    "sustainability_note_en": "Because Qiaoxi has tree shade, solar power is treated as supplementary rather than fully off-grid."
+  },
+  {
+    "id": "base",
+    "name_cn": "钢结构底座与可拆卸检修板",
+    "name_en": "Steel Base with Removable Maintenance Panel",
+    "applied_to": "可维护底座 / Maintainable base",
+    "benefits_cn": ["稳定", "可拆卸", "支持模块更换", "适合户外固定"],
+    "benefits_en": ["Stable", "Removable", "Supports module replacement", "Suitable for outdoor anchoring"],
+    "sustainability_note_cn": "以检修板和模块化连接延长设备寿命，适合历史街区微更新。",
+    "sustainability_note_en": "Maintenance panels and modular connections extend service life and suit historic district micro-renewal."
+  }
+]

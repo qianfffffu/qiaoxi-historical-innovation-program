@@ -1,0 +1,268 @@
+{
+  "default": {
+    "title": {
+      "zh": "多感官包容性导览牌更新",
+      "en": "Multisensory Inclusive Totem Renewal"
+    },
+    "summary": {
+      "zh": "以主屏幕、触觉地图、右侧盲文带、侧边Audio按钮、顶部薄膜光伏和可维护底座组成节点级导览系统。",
+      "en": "A node-level wayfinding system combining main screen, tactile map, right-side braille strip, side audio buttons, top thin-film solar element, and maintainable base."
+    },
+    "next_node_id": "gongchen_bridge",
+    "route_focus": "heritage",
+    "braille_band": {
+      "height_range": "900-1200mm",
+      "items": [
+        { "key": "node_name", "label": { "zh": "节点名称", "en": "Node name" } },
+        { "key": "current_position", "label": { "zh": "当前位置", "en": "Current position" } },
+        { "key": "next_direction", "label": { "zh": "下一节点方向", "en": "Direction to next stop" } },
+        { "key": "risk_notice", "label": { "zh": "风险提示", "en": "Risk notice" } }
+      ]
+    },
+    "side_buttons": [
+      { "id": "where", "shape": "circle", "label": { "zh": "当前位置", "en": "Where am I" }, "audio_section": "current_location" },
+      { "id": "next", "shape": "triangle", "label": { "zh": "下一节点", "en": "Next stop" }, "audio_section": "direction_instruction" },
+      { "id": "about", "shape": "square", "label": { "zh": "本地介绍", "en": "About this place" }, "audio_section": "cultural_interpretation" },
+      { "id": "access", "shape": "dot", "label": { "zh": "无障碍路线", "en": "Accessible route" }, "audio_section": "accessibility_notice" }
+    ],
+    "components": {
+      "screen": {
+        "name": { "zh": "正面主屏幕", "en": "Main Interactive Screen" },
+        "role": { "zh": "显示节点信息、路线推荐、简化地图和双语界面。", "en": "Shows node information, route recommendation, simplified map, and bilingual interface." },
+        "accessibility": { "zh": "大字号、高对比和语音入口降低阅读负担。", "en": "Large type, high contrast, and audio entry reduce reading load." },
+        "material": "screen_glass"
+      },
+      "tactile": {
+        "name": { "zh": "正面下部触觉地图区", "en": "Lower Tactile Map Zone" },
+        "role": { "zh": "以凸起路线表达当前位置、下一节点和运河方向。", "en": "Uses raised route cues for current position, next stop, and canal direction." },
+        "accessibility": { "zh": "适合视障用户用手指建立空间关系。", "en": "Helps blind and low-vision visitors build spatial relationships through touch." },
+        "material": "tactile_plate"
+      },
+      "braille_panel": {
+        "name": { "zh": "右侧盲文触摸带", "en": "Right-side Braille Touch Strip" },
+        "role": { "zh": "在900mm–1200mm可触达高度整合节点名、位置、方向和风险提示。", "en": "Integrates node name, location, direction, and risk notice at a 900-1200mm reachable height." },
+        "accessibility": { "zh": "让使用者无需面对屏幕即可确认导览信息。", "en": "Allows confirmation without facing or reading the visual screen." },
+        "material": "tactile_plate"
+      },
+      "audio_buttons": {
+        "name": { "zh": "右侧Audio按钮列", "en": "Side Audio Button Column" },
+        "role": { "zh": "四个形状不同的按钮分别触发当前位置、下一节点、本地介绍和无障碍路线语音。", "en": "Four differently shaped buttons trigger current location, next stop, local introduction, and accessible route audio." },
+        "accessibility": { "zh": "通过形状差异支持无视觉识别和高频触摸。", "en": "Shape differences support non-visual recognition and frequent use." },
+        "material": "audio_buttons"
+      },
+      "solar": {
+        "name": { "zh": "顶部薄膜光伏辅助模块", "en": "Top Thin-film Solar Assist Module" },
+        "role": { "zh": "作为辅助供电构件，与顶部构造整合。", "en": "Works as an auxiliary power element integrated with the top structure." },
+        "accessibility": { "zh": "降低日常能耗并支持低维护运行。", "en": "Reduces daily energy use and supports low-maintenance operation." },
+        "material": "solar"
+      },
+      "base": {
+        "name": { "zh": "模块化可维护底座", "en": "Modular Maintainable Base" },
+        "role": { "zh": "容纳检修板、锚固结构和可替换模块接口。", "en": "Houses maintenance panel, anchoring structure, and replaceable module interfaces." },
+        "accessibility": { "zh": "稳定设备并降低维修对历史街区空间的干扰。", "en": "Stabilizes the device and reduces maintenance disruption in the historic district." },
+        "material": "base"
+      }
+    },
+    "screen_ui": {
+      "priority_message": { "zh": "确认当前位置，选择适合的导览路线。", "en": "Confirm current position and choose a suitable route." },
+      "map_note": { "zh": "简化地图只显示当前位置、下一节点、运河方向和主要路线。", "en": "The simplified map shows only current position, next stop, canal direction, and main route." },
+      "map_structure": {
+        "current_marker": "YOU",
+        "route_cue": { "zh": "沿主导览线前往下一节点。", "en": "Follow the primary wayfinding line to the next node." },
+        "accessibility_cue": { "zh": "优先选择平缓、连续、易识别的路径。", "en": "Prioritize level, continuous, and legible paths." },
+        "canal_reference": { "zh": "运河作为南北向空间参照。", "en": "The canal works as a north-south spatial reference." }
+      },
+      "quick_actions": [
+        { "id": "play", "label": { "zh": "播放语音", "en": "Play audio" }, "audio_section": "current_location" },
+        { "id": "next", "label": { "zh": "下一站", "en": "Next stop" }, "audio_section": "direction_instruction" },
+        { "id": "route", "label": { "zh": "推荐路线", "en": "Recommended route" }, "audio_section": "direction_instruction" },
+        { "id": "access", "label": { "zh": "无障碍提示", "en": "Accessibility" }, "audio_section": "accessibility_notice" }
+      ]
+    },
+    "sustainability": {
+      "strategy": [
+        { "zh": "模块化可替换", "en": "Modular and replaceable" },
+        { "zh": "低维护与户外可清洁", "en": "Low-maintenance and outdoor-cleanable" },
+        { "zh": "高比例可回收材料", "en": "High recyclable material ratio" },
+        { "zh": "薄膜太阳能辅助供电", "en": "Thin-film solar assisted power" },
+        { "zh": "适合历史街区微更新", "en": "Suitable for historic district micro-renewal" }
+      ]
+    }
+  },
+  "gongchen-bridge": {
+    "title": { "zh": "桥头门户型导览牌", "en": "Bridge Entrance Orientation Totem" },
+    "summary": { "zh": "以桥体、运河和街区入口为三重参照，帮助初访者在桥头快速确认方向。", "en": "Uses bridge, canal, and district entry as three references for first-time orientation." },
+    "next_node_id": "wuli-folk-art-museum",
+    "route_focus": "heritage",
+    "screen_ui": {
+      "priority_message": { "zh": "确认桥头位置，选择进入桥西街区或前往码头。", "en": "Confirm the bridgehead and choose entry into Qiaoxi or the wharf direction." },
+      "map_note": { "zh": "简化地图突出桥体、运河方向和四个电子导览牌点位。", "en": "The simplified map highlights bridge, canal direction, and the four totem sites." },
+      "map_structure": {
+        "current_marker": "BRIDGE",
+        "route_cue": { "zh": "从桥头进入街区后可前往吴理人民俗艺术馆。", "en": "Enter the district from the bridgehead toward Wuli Folk Art Museum." },
+        "accessibility_cue": { "zh": "桥头人流较多，先听取方向与安全提示。", "en": "The bridgehead is busy; listen for direction and safety cues first." },
+        "canal_reference": { "zh": "运河是判断南北方向的主要参照。", "en": "The canal is the main north-south reference." }
+      }
+    }
+  },
+  "wuli-folk-art-museum": {
+    "title": { "zh": "民俗记忆停留型导览牌", "en": "Folk Memory Pause Totem" },
+    "summary": { "zh": "以地方生活记忆为主题，为进入街区后的文化停留提供轻量说明和下一站方向。", "en": "Frames local memory as a quiet cultural pause after entering the district." },
+    "next_node_id": "grand-canal-history-museum",
+    "route_focus": "slow",
+    "screen_ui": {
+      "priority_message": { "zh": "这里适合短暂停留，理解桥西的地方生活和民俗线索。", "en": "Pause briefly here to read local life and folk culture cues." },
+      "map_note": { "zh": "简化地图显示民俗艺术馆与历史文化馆之间的步行联系。", "en": "The simplified map shows the walking connection to the historic culture museum." },
+      "map_structure": {
+        "current_marker": "FOLK",
+        "route_cue": { "zh": "继续前往中国大运河拱宸桥桥西历史文化馆。", "en": "Continue toward the historic culture museum." },
+        "accessibility_cue": { "zh": "适合停留阅读，也可使用 Ask the Site 语音入口。", "en": "Suitable for pausing; the Ask the Site voice entry can be used." },
+        "canal_reference": { "zh": "从生活记忆节点重新连接到运河历史解释。", "en": "Reconnect local memory to canal history interpretation." }
+      }
+    }
+  },
+  "grand-canal-history-museum": {
+    "title": { "zh": "核心解释型导览牌", "en": "Core Interpretation Totem" },
+    "summary": { "zh": "聚合桥、运河、工业遗存与街区更新信息，是四点系统中的主要解释节点。", "en": "Collects bridge, canal, industrial memory, and renewal information as the main interpretation node." },
+    "next_node_id": "gongchen-tourist-wharf",
+    "route_focus": "heritage",
+    "screen_ui": {
+      "priority_message": { "zh": "在此集中理解桥西历史信息，并确认前往旅游码头的方向。", "en": "Read Qiaoxi's historic information here and confirm the direction to the tourist wharf." },
+      "map_note": { "zh": "简化地图强调文化馆、桥头与码头之间的解释关系。", "en": "The simplified map emphasizes interpretation links among museum, bridgehead, and wharf." },
+      "map_structure": {
+        "current_marker": "HISTORY",
+        "route_cue": { "zh": "下一节点为拱宸桥旅游码头，完成水陆转换提示。", "en": "The next node is the tourist wharf, completing land-water transition cues." },
+        "accessibility_cue": { "zh": "阅读信息较多，建议保留语音与大字入口。", "en": "Information is denser here; retain audio and large-text entry." },
+        "canal_reference": { "zh": "运河历史由此转向真实岸线体验。", "en": "Canal history shifts from interpretation to waterfront experience." }
+      }
+    }
+  },
+  "gongchen-tourist-wharf": {
+    "title": { "zh": "水陆转换型导览牌", "en": "Land-water Transition Totem" },
+    "summary": { "zh": "服务码头抵达、离开和返回桥头的方向确认，同时提示临水空间的安全边界。", "en": "Supports wharf arrival, departure, return direction, and waterfront safety awareness." },
+    "next_node_id": "gongchen-bridge",
+    "route_focus": "accessible",
+    "screen_ui": {
+      "priority_message": { "zh": "确认码头、岸线和返回桥头方向。", "en": "Confirm wharf position, waterfront edge, and return direction to the bridgehead." },
+      "map_note": { "zh": "简化地图以岸线和桥头作为主要方向参照。", "en": "The simplified map uses the waterfront and bridgehead as primary references." },
+      "map_structure": {
+        "current_marker": "WHARF",
+        "route_cue": { "zh": "沿岸线返回拱宸桥头，或进入街区继续参观。", "en": "Return along the waterfront to the bridgehead or enter the district." },
+        "accessibility_cue": { "zh": "临水区域请保持安全距离，并优先使用语音确认。", "en": "Keep a safe distance near water and use audio confirmation." },
+        "canal_reference": { "zh": "水体边界是本节点最重要的方向线索。", "en": "The water edge is the most important directional cue here." }
+      }
+    }
+  },
+  "qiaoxi_entrance": {
+    "title": { "zh": "入口方向建立型导览牌", "en": "Arrival Orientation Totem" },
+    "summary": { "zh": "强调第一次到访时的方向建立、路线选择和触觉总图。", "en": "Emphasizes first-visit orientation, route choice, and tactile overview." },
+    "next_node_id": "umbrella_museum",
+    "route_focus": "heritage",
+    "screen_ui": {
+      "priority_message": { "zh": "先建立街区整体结构，再选择经典、无障碍或慢体验路线。", "en": "Read the district structure first, then choose heritage, accessible, or slow route." },
+      "map_note": { "zh": "当前位置位于街区入口，下一推荐节点为中国伞博物馆。", "en": "Current position is the district entrance; next recommended stop is China Umbrella Museum." },
+      "map_structure": {
+        "current_marker": "ENTRY",
+        "route_cue": { "zh": "从入口向东进入展馆前场。", "en": "Move east from the entrance into the museum forecourt." },
+        "accessibility_cue": { "zh": "利用右侧连续建筑界面建立方向。", "en": "Use the continuous building edge on the right for orientation." },
+        "canal_reference": { "zh": "运河方向位于前方偏北侧。", "en": "The canal direction is forward and slightly north." }
+      }
+    }
+  },
+  "umbrella_museum": {
+    "title": { "zh": "展馆前场整合型导览牌", "en": "Museum Forecourt Integrated Totem" },
+    "summary": { "zh": "将展馆入口、前场停留、下一节点方向和无障碍路径整合在同一界面。", "en": "Integrates museum entry, forecourt pause, next-stop direction, and accessible route in one interface." },
+    "next_node_id": "gongchen_bridge",
+    "route_focus": "heritage",
+    "screen_ui": {
+      "priority_message": { "zh": "优先展示伞博物馆介绍、展馆入口和前往拱宸桥的方向。", "en": "Prioritizes museum introduction, entrance location, and direction toward Gongchen Bridge." },
+      "map_note": { "zh": "简化地图突出展馆前场、入口和西北方向的桥头路线。", "en": "The simplified map highlights the forecourt, entrance, and northwest route to the bridgehead." },
+      "map_structure": {
+        "current_marker": "MUSEUM",
+        "route_cue": { "zh": "从展馆入口转向西北侧桥头。", "en": "Turn from the museum entrance toward the northwest bridgehead." },
+        "accessibility_cue": { "zh": "前场平缓，可停留确认语音与触觉信息。", "en": "The level forecourt allows pausing for audio and tactile confirmation." },
+        "canal_reference": { "zh": "运河位于西北方向，作为下一段方向参照。", "en": "The canal lies northwest and becomes the next orientation reference." }
+      }
+    }
+  },
+  "gongchen_bridge": {
+    "title": { "zh": "桥头安全与叙事型导览牌", "en": "Bridgehead Safety and Narrative Totem" },
+    "summary": { "zh": "强化桥头人流、台阶、运河方向和历史叙事的同步提示。", "en": "Coordinates pedestrian flow, steps, canal direction, and heritage narrative at the bridgehead." },
+    "next_node_id": "grand_canal_museum",
+    "route_focus": "heritage",
+    "screen_ui": {
+      "priority_message": { "zh": "这里是桥西最强空间地标，需同时提示桥体、运河、台阶与下一节点。", "en": "This is Qiaoxi's strongest landmark and must clarify bridge, canal, steps, and next stop." },
+      "map_note": { "zh": "简化地图以桥体弧线和南北向运河作为主要触觉参照。", "en": "The simplified map uses the bridge arc and north-south canal as primary tactile references." },
+      "map_structure": {
+        "current_marker": "BRIDGE",
+        "route_cue": { "zh": "从桥头向东南连接大运河博物馆。", "en": "Move southeast from the bridgehead toward Grand Canal Museum." },
+        "accessibility_cue": { "zh": "注意台阶、人流和临水边界。", "en": "Notice steps, crowd flow, and the canal edge." },
+        "canal_reference": { "zh": "南北向运河是此处最稳定的空间线索。", "en": "The north-south canal is the most stable spatial cue here." }
+      }
+    }
+  },
+  "lane_turning": {
+    "title": { "zh": "街巷转折确认型导览牌", "en": "Alley Transition Confirmation Totem" },
+    "summary": { "zh": "服务转角处的方向确认、慢体验路线选择和风险提示。", "en": "Supports direction confirmation, slow route choice, and risk notice at the turning point." },
+    "next_node_id": "rest_pocket",
+    "route_focus": "slow",
+    "screen_ui": {
+      "priority_message": { "zh": "此处不是景点，而是关键方向确认点，提示游客减速并进入街巷尺度。", "en": "This is not a scenic stop but a direction checkpoint, asking visitors to slow down into lane scale." },
+      "map_note": { "zh": "简化地图强调右转关系、下一休憩点和慢体验路线。", "en": "The simplified map emphasizes the right-turn relation, next rest point, and slow route." },
+      "map_structure": {
+        "current_marker": "TURN",
+        "route_cue": { "zh": "在转折点向右进入慢体验街巷。", "en": "Turn right into the slow-experience lane." },
+        "accessibility_cue": { "zh": "通过盲文带和下一节点按钮确认转向。", "en": "Use the braille strip and next-stop button to confirm the turn." },
+        "canal_reference": { "zh": "离开水岸主界面，进入细密街巷肌理。", "en": "Leave the waterfront interface and enter the finer lane texture." }
+      }
+    }
+  },
+  "canal_edge": {
+    "title": { "zh": "运河岸线感知型导览牌", "en": "Canal Edge Orientation Totem" },
+    "summary": { "zh": "利用连续岸线、水体方向和桥梁关系建立低视力友好的空间参照。", "en": "Uses continuous waterfront, water direction, and bridge relation as low-vision spatial references." },
+    "next_node_id": "gongchen_bridge",
+    "route_focus": "slow",
+    "screen_ui": {
+      "priority_message": { "zh": "优先提示水岸边界、安全距离和返回拱宸桥的方向。", "en": "Prioritizes waterfront boundary, safe distance, and direction back to Gongchen Bridge." },
+      "map_note": { "zh": "简化地图以长凸线表示运河岸线，并标出南向返回路径。", "en": "The simplified map uses a long raised line for the canal edge and marks the southward return route." },
+      "map_structure": {
+        "current_marker": "CANAL",
+        "route_cue": { "zh": "沿岸线向南返回桥头。", "en": "Follow the waterfront edge south back to the bridgehead." },
+        "accessibility_cue": { "zh": "保持临水安全距离，使用连续岸线作为低视力方向线。", "en": "Keep safe distance from water and use the continuous edge as a low-vision cue." },
+        "canal_reference": { "zh": "水体边界就是本节点的核心参照。", "en": "The water edge is the core reference of this node." }
+      }
+    }
+  },
+  "grand_canal_museum": {
+    "title": { "zh": "馆前广场衔接型导览牌", "en": "Museum Forecourt Connector Totem" },
+    "summary": { "zh": "将大运河叙事、馆前停留、返回桥头和进入慢体验街巷的选择组织在同一节点。", "en": "Organizes canal narrative, forecourt pause, return to bridgehead, and slow-lane choice at one node." },
+    "next_node_id": "lane_turning",
+    "route_focus": "accessible",
+    "screen_ui": {
+      "priority_message": { "zh": "此处用于连接展馆入口、运河叙事与下一段慢行路线。", "en": "This node connects museum entry, canal narrative, and the next slow-walk segment." },
+      "map_note": { "zh": "简化地图突出馆前广场、返回拱宸桥方向和进入街巷的转向。", "en": "The simplified map highlights the forecourt, return direction to Gongchen Bridge, and the turn into lanes." },
+      "map_structure": {
+        "current_marker": "CANAL MUSEUM",
+        "route_cue": { "zh": "从馆前广场向西进入街巷转折节点。", "en": "Move west from the forecourt toward the lane transition node." },
+        "accessibility_cue": { "zh": "广场适合停留阅读，转入街巷前先确认路线。", "en": "The forecourt supports pausing before confirming the route into lanes." },
+        "canal_reference": { "zh": "运河叙事在此由展馆内容转为空间体验。", "en": "The canal narrative shifts here from exhibition content into spatial experience." }
+      }
+    }
+  },
+  "rest_pocket": {
+    "title": { "zh": "慢行休憩确认型导览牌", "en": "Slow-route Rest Confirmation Totem" },
+    "summary": { "zh": "服务老年游客、儿童和需要再次确认方向的人群，强化短暂停留与语音重播。", "en": "Supports senior visitors, children, and people needing reconfirmation through short pause and audio replay." },
+    "next_node_id": "gongchen_bridge",
+    "route_focus": "slow",
+    "screen_ui": {
+      "priority_message": { "zh": "这里是慢体验路线中的低强度停留点，优先提供休息、方向复核和返回路径。", "en": "This is a low-intensity stop on the slow route, prioritizing rest, direction check, and return path." },
+      "map_note": { "zh": "简化地图标出口袋空间、座椅附近位置和返回拱宸桥的东北方向。", "en": "The simplified map marks the pocket space, seating position, and northeast return to Gongchen Bridge." },
+      "map_structure": {
+        "current_marker": "REST",
+        "route_cue": { "zh": "休息后向东北方向回到桥头主节点。", "en": "After resting, move northeast back to the bridgehead node." },
+        "accessibility_cue": { "zh": "可在此重复播放语音并重新确认触觉路线。", "en": "Replay audio and reconfirm the tactile route here." },
+        "canal_reference": { "zh": "运河方向可通过返回桥头重新建立。", "en": "The canal direction can be re-established by returning to the bridgehead." }
+      }
+    }
+  }
+}

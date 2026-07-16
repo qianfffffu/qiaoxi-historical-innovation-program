@@ -1,0 +1,52 @@
+[
+  {
+    "id": "heritage",
+    "name": { "zh": "桥西四点联系", "en": "Heritage Connection" },
+    "description": {
+      "zh": "以非常轻的步行联系线串联桥头、民俗艺术馆、历史文化馆与旅游码头，表达街区内的文化解释关系。",
+      "en": "A light walking connection linking the bridge entrance, folk art museum, historic culture museum, and tourist wharf as a heritage interpretation sequence."
+    },
+    "distance": "约680 m",
+    "time": { "zh": "约25分钟", "en": "About 25 min" },
+    "node_ids": ["gongchen-bridge", "wuli-folk-art-museum", "grand-canal-history-museum", "gongchen-tourist-wharf"],
+    "path": [
+      { "lat": 30.31872, "lng": 120.14167 },
+      { "lat": 30.31786, "lng": 120.14072 },
+      { "lat": 30.31726, "lng": 120.14192 },
+      { "lat": 30.31936, "lng": 120.14118 }
+    ]
+  },
+  {
+    "id": "accessible",
+    "name": { "zh": "平缓确认路径", "en": "Accessible Confirmation" },
+    "description": {
+      "zh": "优先选择桥头、历史文化馆与码头等较易识别的开敞节点，用于方向确认与语音提示。",
+      "en": "Prioritizes recognizable open nodes such as the bridge entrance, history museum, and wharf for direction confirmation and audio prompts."
+    },
+    "distance": "约520 m",
+    "time": { "zh": "约20分钟", "en": "About 20 min" },
+    "node_ids": ["gongchen-bridge", "grand-canal-history-museum", "gongchen-tourist-wharf"],
+    "path": [
+      { "lat": 30.31872, "lng": 120.14167 },
+      { "lat": 30.31726, "lng": 120.14192 },
+      { "lat": 30.31936, "lng": 120.14118 }
+    ]
+  },
+  {
+    "id": "slow",
+    "name": { "zh": "慢体验文化路径", "en": "Slow Cultural Walk" },
+    "description": {
+      "zh": "从桥头进入民俗与历史解释节点，再回到水岸码头，强调停留、观察与水陆关系。",
+      "en": "Moves from the bridge into folk and historic interpretation nodes before returning to the waterfront wharf, emphasizing pause, observation, and land-water relation."
+    },
+    "distance": "约760 m",
+    "time": { "zh": "约35分钟", "en": "About 35 min" },
+    "node_ids": ["gongchen-bridge", "wuli-folk-art-museum", "grand-canal-history-museum", "gongchen-tourist-wharf"],
+    "path": [
+      { "lat": 30.31872, "lng": 120.14167 },
+      { "lat": 30.31786, "lng": 120.14072 },
+      { "lat": 30.31726, "lng": 120.14192 },
+      { "lat": 30.31936, "lng": 120.14118 }
+    ]
+  }
+]
