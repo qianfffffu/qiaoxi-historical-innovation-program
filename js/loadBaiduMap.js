@@ -3,6 +3,7 @@ let activeAk = "";
 let pendingAk = "";
 let lastScriptAkTail = "";
 let lastAkSource = "none";
+const PUBLIC_DEFAULT_BAIDU_MAP_AK = "pMzU7HkkDQ8UrsryH0N2jwMGgjeIKDJG";
 
 function cleanAk(value) {
   return String(value || "").trim();
@@ -25,6 +26,10 @@ function resolveBaiduAk() {
   const fromVite = viteEnvValue("VITE_BAIDU_MAP_AK");
   if (fromVite) {
     return { ak: fromVite, source: "import.meta.env.VITE_BAIDU_MAP_AK" };
+  }
+
+  if (PUBLIC_DEFAULT_BAIDU_MAP_AK) {
+    return { ak: PUBLIC_DEFAULT_BAIDU_MAP_AK, source: "public-default-browser-ak" };
   }
 
   return { ak: "", source: "none" };

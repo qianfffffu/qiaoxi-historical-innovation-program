@@ -68,7 +68,7 @@ python3 -m http.server 8000
 
 ## 配置百度地图
 
-浏览器端 AK 只从页面表单保存的 `localStorage.QIAOXI_BAIDU_MAP_AK` 读取；如果使用 Vite，则可通过环境变量提供：
+线上版本内置一个公开浏览器端百度地图 AK，普通访客无需手动输入。若需要临时覆盖，可在页面表单保存到 `localStorage.QIAOXI_BAIDU_MAP_AK`；如果使用 Vite，也可通过环境变量提供：
 
 ```env
 VITE_BAIDU_MAP_AK=
